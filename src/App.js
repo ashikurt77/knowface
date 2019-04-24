@@ -8,6 +8,7 @@ import Rank from './components/rank/Rank';
 import FaceRecognition from './components/facerecognition/FaceRecognition';
 import SignIn from './components/signin/SignIn';
 import Register from './components/register/Register';
+import ShowColor from './components/showcolor/ShowColor';
 import Particles from 'react-particles-js';
 
 const defineParticle = {
@@ -37,7 +38,8 @@ class App extends Component {
       imageURL: '',
       box: {},
       route: 'signin',
-      isSignedIn: false
+      isSignedIn: false,
+      imgColor: ''
     }
   }
 
@@ -65,6 +67,11 @@ class App extends Component {
     })
   }
 
+  colorCalculator =(data) =>{
+    const color = data.outputs[0].data.colors[0].raw_hex;
+    this.setState({imgColor: color});
+    console.log(this.state.imgColor);
+  }
 
 
   buttonChange = (event) => {
@@ -74,6 +81,11 @@ class App extends Component {
     app.models.predict(Clarifai.FACE_DETECT_MODEL, this.state.input)
     .then(response => this.faceCalculator(response))
     .catch(err => console.log(err))
+
+    app.models.predict("eeed0b6733a644cea07cf4c60f87ebb7", this.state.input)
+    .then(response => this.colorCalculator(response))
+    .catch(error=>console.log(error))
+    
   }
   
 
@@ -103,6 +115,7 @@ class App extends Component {
                 <Rank />
                 <ImageLinkForm inputChange = {this.inputChange} buttonChange = {this.buttonChange}/>
                 <FaceRecognition iamgeURL = {this.state.imageURL} box={this.state.box} />
+                <ShowColor imgColor={this.state.imgColor} />
               </div>
             </div> 
 

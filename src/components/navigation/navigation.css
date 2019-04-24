@@ -6,10 +6,12 @@
 .nav-btn-1{
     position: absolute;
     top: 30px;
-    right: 130px;
+    right: 180px;
     font-size: 18px;
     font-weight: bold;
     transition: all 0.5s;
+    padding: 10px 20px;
+    border: 1px solid black;
 }
 .nav-btn-2{
     position: absolute;
@@ -18,7 +20,11 @@
     font-size: 18px;
     font-weight: bold;
     transition: all 0.5s;
+    padding: 10px 20px;
+    border: 1px solid black;
 }
 .nav-btn-1:hover,.nav-btn-2:hover{
-    color:#FFF;
+    color:white;
+    border: 1px solid black;
+    background: black;
 }

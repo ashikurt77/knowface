@@ -6,14 +6,14 @@ const Navigation = ({onRoutechange,isSignedIn}) => {
     if(isSignedIn === true){
         return (
             <div className='nav-container'>
-                <p onClick={()=>{onRoutechange('signin')}} className='underline pointer nav-btn-2'>Sign Out</p>
+                <p onClick={()=>{onRoutechange('signin')}} className='pointer nav-btn-2'>Sign Out</p>
             </div>
         )
     } else {
         return(
             <div className='nav-container'>
-                <p onClick={()=>{onRoutechange('signin')}} className='underline pointer nav-btn-1'>Sign In</p>
-                <p onClick={()=>{onRoutechange('register')}} className='underline pointer nav-btn-2'>Register</p>
+                <p onClick={()=>{onRoutechange('signin')}} className='pointer nav-btn-1 '>Sign In</p>
+                <p onClick={()=>{onRoutechange('register')}} className='pointer nav-btn-2'>Register</p>
             </div>
         )
     }
