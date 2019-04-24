@@ -1,0 +1,21 @@
+/* .faceImg{
+    width: 40%;
+    margin-top: 20px;
+} */
+.facebox{
+    position: absolute;
+    box-shadow: inset 0 0 0 3px #149df2;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.face-container{
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    max-width:40%;
+}

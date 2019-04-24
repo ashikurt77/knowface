@@ -1,0 +1,24 @@
+.nav-container{
+    display:flex;
+    justify-content:flex-end;
+    position:relative;
+}
+.nav-btn-1{
+    position: absolute;
+    top: 30px;
+    right: 130px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.nav-btn-2{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.nav-btn-1:hover,.nav-btn-2:hover{
+    color:#FFF;
+}
