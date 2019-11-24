@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/knowface/static/css/main.695bc034.chunk.css",
+    "main.js": "/knowface/static/js/main.aca3b0d7.chunk.js",
+    "main.js.map": "/knowface/static/js/main.aca3b0d7.chunk.js.map",
+    "runtime~main.js": "/knowface/static/js/runtime~main.5e9fa07c.js",
+    "runtime~main.js.map": "/knowface/static/js/runtime~main.5e9fa07c.js.map",
+    "static/css/2.31dafeb2.chunk.css": "/knowface/static/css/2.31dafeb2.chunk.css",
+    "static/js/2.51188545.chunk.js": "/knowface/static/js/2.51188545.chunk.js",
+    "static/js/2.51188545.chunk.js.map": "/knowface/static/js/2.51188545.chunk.js.map",
+    "index.html": "/knowface/index.html",
+    "precache-manifest.b40b2b8cf39a9518e4a18ff5634b894f.js": "/knowface/precache-manifest.b40b2b8cf39a9518e4a18ff5634b894f.js",
+    "service-worker.js": "/knowface/service-worker.js",
+    "static/css/2.31dafeb2.chunk.css.map": "/knowface/static/css/2.31dafeb2.chunk.css.map",
+    "static/css/main.695bc034.chunk.css.map": "/knowface/static/css/main.695bc034.chunk.css.map",
+    "static/media/face.png": "/knowface/static/media/face.f27d26fc.png"
+  }
+}
